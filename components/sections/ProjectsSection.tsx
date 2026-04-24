@@ -15,8 +15,8 @@ export function ProjectsSection() {
         <div className="grid gap-5 md:grid-cols-2">
           {[1, 2].map((project) => (
             <GlassCard key={project} className="flex h-full flex-col">
-              <h3 className="text-lg font-semibold">Project Name {project}</h3>
-              <p className="mt-3 flex-1 text-slate-700">Add project summary, constraints, and measurable outcomes.</p>
+              <h3 className="text-lg font-semibold text-navy-deep">Project Name {project}</h3>
+              <p className="mt-3 flex-1 text-navy-deep/80">Add project summary, constraints, and measurable outcomes.</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <TagPill label="Next.js" />
                 <TagPill label="TypeScript" />

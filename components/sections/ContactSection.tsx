@@ -10,11 +10,11 @@ export function ContactSection() {
           title="Let&apos;s build something useful"
           description="Keep this area simple: one clear call to action and essential contact links."
         />
-        <div className="rounded-2xl border border-slate-200 bg-white p-6">
-          <p className="text-slate-700">Available for full-time roles, consulting, and collaboration.</p>
+        <div className="rounded-panel-chrome p-6">
+          <p className="text-navy-deep/80">Available for full-time roles, consulting, and collaboration.</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <AeroButton href="mailto:hello@example.com">Email Me</AeroButton>
-            <AeroButton href="#" className="bg-slate-900 text-white hover:bg-slate-800">
+            <AeroButton href="#" className="aero-button--primary">
               LinkedIn
             </AeroButton>
           </div>

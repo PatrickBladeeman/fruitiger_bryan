@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="relative">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />

@@ -12,14 +12,14 @@ export function ExperienceSection() {
         />
         <div className="grid gap-4">
           <GlassCard>
-            <h3 className="text-lg font-semibold">Role Title · Company</h3>
-            <p className="mt-1 text-sm text-slate-600">2023 — Present</p>
-            <p className="mt-3 text-slate-700">Describe scope, impact, and notable outcomes here.</p>
+            <h3 className="text-lg font-semibold text-navy-deep">Role Title · Company</h3>
+            <p className="mt-1 text-sm text-navy-deep/65">2023 — Present</p>
+            <p className="mt-3 text-navy-deep/80">Describe scope, impact, and notable outcomes here.</p>
           </GlassCard>
           <GlassCard>
-            <h3 className="text-lg font-semibold">Previous Role · Company</h3>
-            <p className="mt-1 text-sm text-slate-600">2021 — 2023</p>
-            <p className="mt-3 text-slate-700">Add concise bullets or a short summary of responsibilities.</p>
+            <h3 className="text-lg font-semibold text-navy-deep">Previous Role · Company</h3>
+            <p className="mt-1 text-sm text-navy-deep/65">2021 — 2023</p>
+            <p className="mt-3 text-navy-deep/80">Add concise bullets or a short summary of responsibilities.</p>
           </GlassCard>
         </div>
       </div>
