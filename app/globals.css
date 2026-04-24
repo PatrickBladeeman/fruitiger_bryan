@@ -4,6 +4,18 @@
 
 :root {
   color-scheme: light;
+  --color-sky: 79 168 255;
+  --color-aero-blue: 62 141 255;
+  --color-cyan: 102 214 255;
+  --color-fresh-green: 114 216 109;
+  --color-lime-fresh: 167 232 93;
+  --color-cloud-white: 247 251 255;
+  --color-navy-deep: 27 45 74;
+  --color-glass-border: 255 255 255;
+  --glass-bg: rgba(255, 255, 255, 0.56);
+  --glass-bg-strong: rgba(255, 255, 255, 0.76);
+  --shadow-raised: 0 10px 24px rgba(27, 45, 74, 0.12), 0 2px 6px rgba(79, 168, 255, 0.22);
+  --inner-highlight: rgba(255, 255, 255, 0.72);
 }
 
 html {
@@ -11,7 +23,13 @@ html {
 }
 
 body {
-  @apply bg-slate-50 text-slate-900 antialiased;
+  background: linear-gradient(
+    180deg,
+    rgb(var(--color-cloud-white)) 0%,
+    rgb(var(--color-cyan) / 0.32) 45%,
+    rgb(var(--color-cloud-white)) 100%
+  );
+  @apply text-navy-deep antialiased;
 }
 
 @layer components {
@@ -21,5 +39,46 @@ body {
 
   .section-base {
     @apply py-16 md:py-20;
+  }
+
+  .rounded-panel-chrome {
+    @apply rounded-2xl border border-glass-border/70 bg-aero-panel;
+    box-shadow: var(--shadow-raised), inset 0 1px 0 var(--inner-highlight);
+  }
+
+  .frosted-glass-card {
+    @apply rounded-2xl border border-glass-border/70 p-6 backdrop-blur-md;
+    background-color: var(--glass-bg);
+    box-shadow: var(--shadow-raised), inset 0 1px 0 var(--inner-highlight);
+  }
+
+  .aero-button {
+    @apply inline-flex items-center justify-center rounded-full border border-aero-blue/35 bg-gloss-surface px-5 py-2 text-sm font-medium text-navy-deep transition-all duration-200;
+    box-shadow: var(--shadow-raised), inset 0 1px 0 var(--inner-highlight);
+  }
+
+  .aero-button:hover {
+    @apply border-aero-blue/45 shadow-hover-glow;
+    transform: translateY(-1px);
+  }
+
+  .aero-button:active,
+  .aero-button.is-pressed {
+    @apply border-aero-blue/50;
+    box-shadow: inset 0 2px 6px rgba(27, 45, 74, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(0);
+  }
+
+  .aero-button--primary {
+    @apply border-aero-blue/55 text-cloud-white;
+    background-image: linear-gradient(180deg, rgba(102, 214, 255, 0.92) 0%, rgba(62, 141, 255, 0.94) 65%, rgba(62, 141, 255, 1) 100%);
+  }
+
+  .aero-button--primary:hover {
+    box-shadow: 0 0 0 1px rgba(79, 168, 255, 0.5), 0 0 20px rgba(62, 141, 255, 0.45);
+  }
+
+  .aero-button:focus-visible {
+    @apply outline-none ring-2 ring-aero-blue/60 ring-offset-2 ring-offset-cloud-white;
   }
 }

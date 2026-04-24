@@ -9,7 +9,7 @@ export function AboutSection() {
           title="Building products with clarity"
           description="Use this section for your background, approach, and the kind of work you enjoy most."
         />
-        <div className="max-w-3xl space-y-4 text-slate-700">
+        <div className="max-w-3xl space-y-4 text-navy-deep/80">
           <p>
             This structure is intentionally lightweight so you can iterate on voice, storytelling, and visuals without
             changing the component architecture.

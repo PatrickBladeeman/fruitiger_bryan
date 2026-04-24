@@ -6,14 +6,14 @@ export function HeroSection() {
     <section id="home" className="section-base pt-20 md:pt-24">
       <div className="container-max grid items-start gap-8 lg:grid-cols-[1.6fr_1fr]">
         <header>
-          <p className="text-sm font-medium uppercase tracking-wide text-slate-600">Portfolio</p>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Hi, I&apos;m Bryan.</h1>
-          <p className="mt-4 max-w-2xl text-base text-slate-700 md:text-lg">
+          <p className="text-sm font-medium uppercase tracking-wide text-aero-blue">Portfolio</p>
+          <h1 className="mt-3 text-4xl font-bold tracking-tight text-navy-deep sm:text-5xl">Hi, I&apos;m Bryan.</h1>
+          <p className="mt-4 max-w-2xl text-base text-navy-deep/80 md:text-lg">
             I build dependable products with clear architecture, thoughtful UX, and maintainable front-end systems.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <AeroButton href="#projects">View Projects</AeroButton>
-            <AeroButton href="#contact" className="bg-slate-900 text-white hover:bg-slate-800">
+            <AeroButton href="#contact" className="aero-button--primary">
               Contact Me
             </AeroButton>
           </div>
